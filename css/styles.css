@@ -90,22 +90,18 @@ img{
 .hero {
     padding-top: 200px;
     padding-bottom: 200px ;
-   
-    letter-spacing: 0.06em;
-    text-align: center;
-}
-.overlay{
+    background-image: 
+        linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/company.jpg);
+    background-color: #2F303A; 
+       
     max-width: 1600px;
     height: 600px;
     outline: 1px solid black;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4),
-     url(../images/company.jpg));
-    /* background-image: url(../images/company.jpg); */
-    /* background: rgba(47, 48, 58, 0.4); */
-    background-color: #2F303A;
+   
+    
     background-repeat: no-repeat;
     
     background-size: cover;
@@ -115,8 +111,12 @@ img{
     margin-left: auto;
     margin-right: auto;
 
-
+    letter-spacing: 0.06em;
+    text-align: center;
 }
+
+  
+
 .hero-title {
     margin-top:0;
     margin-bottom:30px;
@@ -147,6 +147,32 @@ img{
      display: flex;
      flex-wrap: wrap;
      justify-content:space-between;
+ }
+ .features .item::before{
+     display: block;
+     content: '';
+     height: 120px;
+     background-size: 70px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-color: #F5F4FA;
+     border-radius: 4px;
+     margin-bottom: 30px;
+     
+  
+ }
+ .icon-antenna::before{
+     background-image: url(../images/antenna.svg);
+
+ }
+ .icon-clock::before{
+     background-image: url(../images/clock.svg);
+ }
+ .icon-diagram::before{
+     background-image: url(../images/diagram.svg);
+ }
+ .icon-astrounaut::before{
+     background-image: url(../images/astronaut.svg);
  }
  .features .item{
      width: 270px;
