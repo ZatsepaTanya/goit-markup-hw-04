@@ -233,9 +233,39 @@ img{
 }
 .company .item:not(:last-child){
     margin-right: 30px;
-    
+      
+}
+.social-icon-list{
+    display: flex;
+    justify-content: center;
+
+}
+.social-icon-item:not(:last-child){
+margin-right: 10px;
+}
+.social-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
     
 }
+.social-icon-link:hover{
+    background-color: var(--accent-color);
+}
+.social-icon-link:hover .social-icon{
+    fill: #fff;
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
 .name{
     text-align: center;
     /* border-radius: 0px 0px 4px 4px; */
@@ -260,6 +290,10 @@ img{
 
     font-size: 16px;
     line-height: 1.19;
+}
+.section.client{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .post {
     padding-top: 60px;
