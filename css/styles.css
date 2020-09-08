@@ -75,6 +75,10 @@ img{
  .mail .item:not(:last-child){
     margin-right: 50px;
 }
+.social-mail-phone{
+    display: flex;
+    align-items: center;
+}
 .mail .link {
      color: var(--primary-text-color);
      letter-spacing: 0.02em;
@@ -86,6 +90,14 @@ img{
 .mail .link:hover,
 .mail .link:focus{
     color: var(--accent-color);  
+}
+.info{
+    margin-right: 10px;
+}
+.mail .link:hover .info,
+.mail .link:focus .info
+{
+    fill: var(--accent-color);
 }
 .hero {
     padding-top: 200px;
@@ -253,10 +265,12 @@ margin-right: 10px;
     border-radius: 50%;
     
 }
-.social-icon-link:hover{
+.social-icon-link:hover,
+.social-icon-link:focus{
     background-color: var(--accent-color);
 }
-.social-icon-link:hover .social-icon{
+.social-icon-link:hover .social-icon,
+.social-icon-link:focus .social-icon{
     fill: #fff;
 }
 
@@ -264,6 +278,17 @@ margin-right: 10px;
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+}
+.social-icon-partner{
+    fill: #AFB1B8;
+    
+}
+.customer-icon-link{
+    display: flex;
+    height: 90px;
+    width: 170px;
+    justify-content: center; 
+    align-items: center;
 }
 
 .name{
@@ -276,7 +301,7 @@ margin-right: 10px;
 }
 .company-title {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 
     color: var(--title-text-color);
     font-weight: 500;
@@ -286,7 +311,7 @@ margin-right: 10px;
 
 .company-job {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -295,9 +320,32 @@ margin-right: 10px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.customer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+/* .customer .item:not(:last-child){ */
+    /* margin-right: 30px; */
+
+.customer .item{
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+}
+.customer-icon-link:hover,
+.customer-icon-link:hover{
+    border: 1px solid var(--accent-color);
+}
+.customer-icon-link:hover .social-icon-partner,
+.customer-icon-link:focus .social-icon-partner{
+    fill: var(--accent-color);
+}
 .post {
     padding-top: 60px;
-    padding-bottom: 60px ;
+   
     
     background-color: #000000;
 }
@@ -314,7 +362,35 @@ margin-right: 10px;
 }
 .post-logo > span{
     color: var(--accent-color);
+    margin-bottom: 20px;
+    
 }
+.post-adress:not(:last-child){
+    margin-bottom: 9px;
+}
+.post-adress:last-child{
+    padding-bottom: 60px ;
+}
+.post-social{
+    display: flex;
+    flex: baseline;
+}
+.welcom{
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+.welcom .social-icon{
+    fill: #fff;
+}
+
+.post-social-icon{
+    margin-left: 70px;
+    }
+.post .title{
+    color:#ffffff;
+    
+}
+
 .address{
     color:#ffffff;
     font-size: 14px;
@@ -348,6 +424,13 @@ button{
     background: #F5F4FA;
     border: transparent;
 }
+button :hover{
+    background: var(--accent-color);
+    color:#ffffff;
+}
+button :hover .filtr-title{
+    color: #FFFFFF;
+}
 .portfolio{
     border-top: 1px solid #ECECEC;
 }
@@ -359,6 +442,11 @@ button{
 .filtr .item:not(:last-child){
 margin-right: 8px;
 }
+ .filtr-title: :hover{ */
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+     background-color: var(--accent-color) 
+ } 
+
 .filtr-title{
     padding: 6px 22px;
     margin: 0px;
@@ -392,6 +480,10 @@ margin-right: 8px;
 .example-work{
     text-decoration: none;
 }
+.example .item:hover,
+.example .item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .example .title{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -415,8 +507,4 @@ margin-right: 8px;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-}
-.filtr-title:hover,
-.filtr-title:focus{
-    color: var(--accent-color)
 }
